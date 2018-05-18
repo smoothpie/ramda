@@ -1,4 +1,4 @@
-47import _curry2 from './internal/_curry2';
+import _curry2 from './internal/_curry2';
 import _isInteger from './internal/_isInteger';
 import assoc from './assoc';
 import dissoc from './dissoc';

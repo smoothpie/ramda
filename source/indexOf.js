@@ -1,4 +1,4 @@
-86import _curry2 from './internal/_curry2';
+import _curry2 from './internal/_curry2';
 import _indexOf from './internal/_indexOf';
 import _isArray from './internal/_isArray';
 

@@ -1,4 +1,4 @@
-123import memoizeWith from './memoizeWith';
+import memoizeWith from './memoizeWith';
 import toString from './toString';
 
 

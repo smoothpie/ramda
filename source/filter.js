@@ -1,4 +1,4 @@
-62import _curry2 from './internal/_curry2';
+import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _filter from './internal/_filter';
 import _isObject from './internal/_isObject';

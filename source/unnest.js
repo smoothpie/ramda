@@ -1,4 +1,4 @@
-232import _identity from './internal/_identity';
+import _identity from './internal/_identity';
 import chain from './chain';
 
 

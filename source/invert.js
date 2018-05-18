@@ -1,4 +1,4 @@
-92import _curry1 from './internal/_curry1';
+import _curry1 from './internal/_curry1';
 import _has from './internal/_has';
 import keys from './keys';
 

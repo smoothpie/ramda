@@ -1,4 +1,4 @@
-178import _curryN from './internal/_curryN';
+import _curryN from './internal/_curryN';
 import _dispatchable from './internal/_dispatchable';
 import _has from './internal/_has';
 import _reduce from './internal/_reduce';

@@ -1,4 +1,4 @@
-124import _arity from './internal/_arity';
+import _arity from './internal/_arity';
 import _curry2 from './internal/_curry2';
 import _has from './internal/_has';
 

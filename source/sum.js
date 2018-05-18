@@ -1,4 +1,4 @@
-200import add from './add';
+import add from './add';
 import reduce from './reduce';
 
 

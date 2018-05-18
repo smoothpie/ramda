@@ -1,4 +1,4 @@
-26import _clone from './internal/_clone';
+import _clone from './internal/_clone';
 import _curry1 from './internal/_curry1';
 
 

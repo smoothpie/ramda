@@ -1,4 +1,4 @@
-126import _objectAssign from './internal/_objectAssign';
+import _objectAssign from './internal/_objectAssign';
 import _curry1 from './internal/_curry1';
 
 

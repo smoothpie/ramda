@@ -1,4 +1,4 @@
-221import _curry1 from './internal/_curry1';
+import _curry1 from './internal/_curry1';
 
 
 /**

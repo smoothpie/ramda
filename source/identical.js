@@ -1,4 +1,4 @@
-80import _objectIs from './internal/_objectIs';
+import _objectIs from './internal/_objectIs';
 import _curry2 from './internal/_curry2';
 
 

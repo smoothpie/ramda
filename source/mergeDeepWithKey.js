@@ -1,4 +1,4 @@
-130import _curry3 from './internal/_curry3';
+import _curry3 from './internal/_curry3';
 import _isObject from './internal/_isObject';
 import mergeWithKey from './mergeWithKey';
 

@@ -1,4 +1,4 @@
-113import _curry2 from './internal/_curry2';
+import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _map from './internal/_map';
 import _reduce from './internal/_reduce';

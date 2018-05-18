@@ -1,4 +1,4 @@
-154import _concat from './internal/_concat';
+import _concat from './internal/_concat';
 import _createPartialApplicator from './internal/_createPartialApplicator';
 import flip from './flip';
 

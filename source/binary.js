@@ -1,4 +1,4 @@
-20import _curry1 from './internal/_curry1';
+import _curry1 from './internal/_curry1';
 import nAry from './nAry';
 
 

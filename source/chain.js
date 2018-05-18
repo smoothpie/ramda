@@ -1,4 +1,4 @@
-24import _curry2 from './internal/_curry2';
+import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _makeFlat from './internal/_makeFlat';
 import _xchain from './internal/_xchain';

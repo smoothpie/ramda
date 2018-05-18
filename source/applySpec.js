@@ -1,4 +1,4 @@
-15import _curry1 from './internal/_curry1';
+import _curry1 from './internal/_curry1';
 import apply from './apply';
 import curryN from './curryN';
 import map from './map';

@@ -1,4 +1,4 @@
-79import nth from './nth';
+import nth from './nth';
 
 
 /**

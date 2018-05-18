@@ -1,4 +1,4 @@
-49import _curry2 from './internal/_curry2';
+import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _xdrop from './internal/_xdrop';
 import slice from './slice';

@@ -1,4 +1,4 @@
-189import _curry3 from './internal/_curry3';
+import _curry3 from './internal/_curry3';
 import always from './always';
 import over from './over';
 

@@ -1,4 +1,4 @@
-108import _curry1 from './internal/_curry1';
+import _curry1 from './internal/_curry1';
 import assoc from './assoc';
 import lens from './lens';
 import prop from './prop';

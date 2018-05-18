@@ -1,4 +1,4 @@
-176import _curry2 from './internal/_curry2';
+import _curry2 from './internal/_curry2';
 import _isNumber from './internal/_isNumber';
 
 

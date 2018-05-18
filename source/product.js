@@ -1,4 +1,4 @@
-168import multiply from './multiply';
+import multiply from './multiply';
 import reduce from './reduce';
 
 

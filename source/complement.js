@@ -1,4 +1,4 @@
-28import lift from './lift';
+import lift from './lift';
 import not from './not';
 
 

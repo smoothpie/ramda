@@ -1,4 +1,4 @@
-228import identity from './identity';
+import identity from './identity';
 import uniqBy from './uniqBy';
 
 

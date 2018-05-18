@@ -1,4 +1,4 @@
-106import _curry1 from './internal/_curry1';
+import _curry1 from './internal/_curry1';
 import lens from './lens';
 import nth from './nth';
 import update from './update';

@@ -1,4 +1,4 @@
-30import chain from './chain';
+import chain from './chain';
 import compose from './compose';
 import map from './map';
 

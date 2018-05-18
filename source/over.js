@@ -1,4 +1,4 @@
-151import _curry3 from './internal/_curry3';
+import _curry3 from './internal/_curry3';
 
 // `Identity` is a functor that holds a single value, where `map` simply
 // transforms the held value with the provided function.

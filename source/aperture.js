@@ -1,4 +1,4 @@
-11import _aperture from './internal/_aperture';
+import _aperture from './internal/_aperture';
 import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _xaperture from './internal/_xaperture';

@@ -1,4 +1,4 @@
-158import _curry3 from './internal/_curry3';
+import _curry3 from './internal/_curry3';
 import defaultTo from './defaultTo';
 import path from './path';
 

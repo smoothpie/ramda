@@ -1,4 +1,4 @@
-155import filter from './filter';
+import filter from './filter';
 import juxt from './juxt';
 import reject from './reject';
 

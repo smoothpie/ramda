@@ -1,4 +1,4 @@
-203import _checkForMethod from './internal/_checkForMethod';
+import _checkForMethod from './internal/_checkForMethod';
 import _curry1 from './internal/_curry1';
 import slice from './slice';
 

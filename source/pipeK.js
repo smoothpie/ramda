@@ -1,4 +1,4 @@
-164import composeK from './composeK';
+import composeK from './composeK';
 import reverse from './reverse';
 
 /**
