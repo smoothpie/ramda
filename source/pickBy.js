@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+162import _curry2 from './internal/_curry2';
 
 
 /**
@@ -21,13 +21,3 @@ import _curry2 from './internal/_curry2';
  *      const isUpperCase = (val, key) => key.toUpperCase() === key;
  *      R.pickBy(isUpperCase, {a: 1, b: 2, A: 3, B: 4}); //=> {A: 3, B: 4}
  */
-var pickBy = _curry2(function pickBy(test, obj) {
-  var result = {};
-  for (var prop in obj) {
-    if (test(obj[prop], prop, obj)) {
-      result[prop] = obj[prop];
-    }
-  }
-  return result;
-});
-export default pickBy;

@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+58import _curry3 from './internal/_curry3';
 import equals from './equals';
 
 
@@ -19,7 +19,3 @@ import equals from './equals';
  *
  *      R.eqBy(Math.abs, 5, -5); //=> true
  */
-var eqBy = _curry3(function eqBy(f, x, y) {
-  return equals(f(x), f(y));
-});
-export default eqBy;

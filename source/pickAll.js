@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+161import _curry2 from './internal/_curry2';
 
 
 /**
@@ -19,15 +19,3 @@ import _curry2 from './internal/_curry2';
  *      R.pickAll(['a', 'd'], {a: 1, b: 2, c: 3, d: 4}); //=> {a: 1, d: 4}
  *      R.pickAll(['a', 'e', 'f'], {a: 1, b: 2, c: 3, d: 4}); //=> {a: 1, e: undefined, f: undefined}
  */
-var pickAll = _curry2(function pickAll(names, obj) {
-  var result = {};
-  var idx = 0;
-  var len = names.length;
-  while (idx < len) {
-    var name = names[idx];
-    result[name] = obj[name];
-    idx += 1;
-  }
-  return result;
-});
-export default pickAll;

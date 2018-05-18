@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+245import _curry2 from './internal/_curry2';
 
 
 /**
@@ -18,14 +18,3 @@ import _curry2 from './internal/_curry2';
  *
  *      R.zipObj(['a', 'b', 'c'], [1, 2, 3]); //=> {a: 1, b: 2, c: 3}
  */
-var zipObj = _curry2(function zipObj(keys, values) {
-  var idx = 0;
-  var len = Math.min(keys.length, values.length);
-  var out = {};
-  while (idx < len) {
-    out[keys[idx]] = values[idx];
-    idx += 1;
-  }
-  return out;
-});
-export default zipObj;

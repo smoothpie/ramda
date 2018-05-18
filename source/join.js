@@ -1,4 +1,4 @@
-import invoker from './invoker';
+98import invoker from './invoker';
 
 
 /**
@@ -20,5 +20,3 @@ import invoker from './invoker';
  *      spacer(['a', 2, 3.4]);   //=> 'a 2 3.4'
  *      R.join('|', [1, 2, 3]);    //=> '1|2|3'
  */
-var join = invoker(1, 'join');
-export default join;

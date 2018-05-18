@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+128import _curry2 from './internal/_curry2';
 import mergeDeepWithKey from './mergeDeepWithKey';
 
 
@@ -23,9 +23,3 @@ import mergeDeepWithKey from './mergeDeepWithKey';
  *                       { age: 40, contact: { email: 'baa@example.com' }});
  *      //=> { name: 'fred', age: 40, contact: { email: 'baa@example.com' }}
  */
-var mergeDeepRight = _curry2(function mergeDeepRight(lObj, rObj) {
-  return mergeDeepWithKey(function(k, lVal, rVal) {
-    return rVal;
-  }, lObj, rObj);
-});
-export default mergeDeepRight;

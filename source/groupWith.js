@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+73import _curry2 from './internal/_curry2';
 
 /**
  * Takes a list and returns a list of lists where each sublist's elements are
@@ -30,18 +30,3 @@ import _curry2 from './internal/_curry2';
  * R.groupWith(R.eqBy(isVowel), 'aestiou')
  * //=> ['ae', 'st', 'iou']
  */
-var groupWith = _curry2(function(fn, list) {
-  var res = [];
-  var idx = 0;
-  var len = list.length;
-  while (idx < len) {
-    var nextidx = idx + 1;
-    while (nextidx < len && fn(list[nextidx - 1], list[nextidx])) {
-      nextidx += 1;
-    }
-    res.push(list.slice(idx, nextidx));
-    idx = nextidx;
-  }
-  return res;
-});
-export default groupWith;

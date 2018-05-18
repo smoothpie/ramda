@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+81import _curry1 from './internal/_curry1';
 import _identity from './internal/_identity';
 
 
@@ -21,5 +21,3 @@ import _identity from './internal/_identity';
  *      R.identity(obj) === obj; //=> true
  * @symb R.identity(a) = a
  */
-var identity = _curry1(_identity);
-export default identity;

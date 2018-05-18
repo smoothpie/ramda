@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+166import _curry2 from './internal/_curry2';
 import map from './map';
 import prop from './prop';
 
@@ -30,7 +30,3 @@ import prop from './prop';
  * @symb R.pluck('x', [{x: 1, y: 2}, {x: 3, y: 4}, {x: 5, y: 6}]) = [1, 3, 5]
  * @symb R.pluck(0, [[1, 2], [3, 4], [5, 6]]) = [1, 3, 5]
  */
-var pluck = _curry2(function pluck(p, list) {
-  return map(prop(p), list);
-});
-export default pluck;

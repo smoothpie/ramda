@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+39import _curry1 from './internal/_curry1';
 import curryN from './curryN';
 
 
@@ -43,7 +43,3 @@ import curryN from './curryN';
  *      const g = f(3);
  *      g(4); //=> 10
  */
-var curry = _curry1(function curry(fn) {
-  return curryN(fn.length, fn);
-});
-export default curry;

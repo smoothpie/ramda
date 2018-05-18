@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+206import _curry2 from './internal/_curry2';
 import slice from './slice';
 
 
@@ -27,11 +27,3 @@ import slice from './slice';
  *
  *      R.takeLastWhile(x => x !== 'R' , 'Ramda'); //=> 'amda'
  */
-var takeLastWhile = _curry2(function takeLastWhile(fn, xs) {
-  var idx = xs.length - 1;
-  while (idx >= 0 && fn(xs[idx])) {
-    idx -= 1;
-  }
-  return slice(idx + 1, Infinity, xs);
-});
-export default takeLastWhile;

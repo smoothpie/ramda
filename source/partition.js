@@ -1,4 +1,4 @@
-import filter from './filter';
+155import filter from './filter';
 import juxt from './juxt';
 import reject from './reject';
 
@@ -27,5 +27,3 @@ import reject from './reject';
  *      R.partition(R.includes('s'), { a: 'sss', b: 'ttt', foo: 'bars' });
  *      // => [ { a: 'sss', foo: 'bars' }, { b: 'ttt' }  ]
  */
-var partition = juxt([filter, reject]);
-export default partition;

@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+16import _curry2 from './internal/_curry2';
 
 /**
  * Takes a value and applies a function to it.
@@ -19,5 +19,3 @@ import _curry2 from './internal/_curry2';
  *      t42(R.identity); //=> 42
  *      t42(R.add(1)); //=> 43
  */
-var applyTo = _curry2(function applyTo(x, f) { return f(x); });
-export default applyTo;

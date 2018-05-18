@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+15import _curry1 from './internal/_curry1';
 import apply from './apply';
 import curryN from './curryN';
 import map from './map';
@@ -33,13 +33,3 @@ import values from './values';
  *      getMetrics(2, 4); // => { sum: 6, nested: { mul: 8 } }
  * @symb R.applySpec({ x: f, y: { z: g } })(a, b) = { x: f(a, b), y: { z: g(a, b) } }
  */
-var applySpec = _curry1(function applySpec(spec) {
-  spec = map(function(v) { return typeof v == 'function' ? v : applySpec(v); },
-             spec);
-  return curryN(reduce(max, 0, pluck('length', values(spec))),
-                function() {
-                  var args = arguments;
-                  return map(function(f) { return apply(f, args); }, spec);
-                });
-});
-export default applySpec;

@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+76import _curry2 from './internal/_curry2';
 import hasPath from './hasPath';
 
 
@@ -26,7 +26,3 @@ import hasPath from './hasPath';
  *      pointHas('y');  //=> true
  *      pointHas('z');  //=> false
  */
-var has = _curry2(function has(prop, obj) {
-  return hasPath([prop], obj);
-});
-export default has;

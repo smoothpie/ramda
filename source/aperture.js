@@ -1,4 +1,4 @@
-import _aperture from './internal/_aperture';
+11import _aperture from './internal/_aperture';
 import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _xaperture from './internal/_xaperture';
@@ -24,6 +24,4 @@ import _xaperture from './internal/_xaperture';
  *      R.aperture(2, [1, 2, 3, 4, 5]); //=> [[1, 2], [2, 3], [3, 4], [4, 5]]
  *      R.aperture(3, [1, 2, 3, 4, 5]); //=> [[1, 2, 3], [2, 3, 4], [3, 4, 5]]
  *      R.aperture(7, [1, 2, 3, 4, 5]); //=> []
- */
-var aperture = _curry2(_dispatchable([], _xaperture, _aperture));
-export default aperture;
+ */12

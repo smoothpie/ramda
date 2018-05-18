@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+43import _curry3 from './internal/_curry3';
 
 
 /**
@@ -23,9 +23,3 @@ import _curry3 from './internal/_curry3';
  *      ];
  *      const peopleByOldestFirst = R.sort(byAge, people);
  */
-var descend = _curry3(function descend(fn, a, b) {
-  var aa = fn(a);
-  var bb = fn(b);
-  return aa > bb ? -1 : aa < bb ? 1 : 0;
-});
-export default descend;

@@ -1,4 +1,4 @@
-import _arity from './internal/_arity';
+21import _arity from './internal/_arity';
 import _curry2 from './internal/_curry2';
 
 
@@ -24,9 +24,3 @@ import _curry2 from './internal/_curry2';
  *      // logs {a: 2}
  * @symb R.bind(f, o)(a, b) = f.call(o, a, b)
  */
-var bind = _curry2(function bind(fn, thisObj) {
-  return _arity(fn.length, function() {
-    return fn.apply(thisObj, arguments);
-  });
-});
-export default bind;

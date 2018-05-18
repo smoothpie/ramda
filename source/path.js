@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+156import _curry2 from './internal/_curry2';
 
 
 /**
@@ -19,16 +19,3 @@ import _curry2 from './internal/_curry2';
  *      R.path(['a', 'b'], {a: {b: 2}}); //=> 2
  *      R.path(['a', 'b'], {c: {b: 2}}); //=> undefined
  */
-var path = _curry2(function path(paths, obj) {
-  var val = obj;
-  var idx = 0;
-  while (idx < paths.length) {
-    if (val == null) {
-      return;
-    }
-    val = val[paths[idx]];
-    idx += 1;
-  }
-  return val;
-});
-export default path;

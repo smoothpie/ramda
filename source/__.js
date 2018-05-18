@@ -25,4 +25,3 @@
  *      const greet = R.replace('{name}', R.__, 'Hello, {name}!');
  *      greet('Alice'); //=> 'Hello, Alice!'
  */
-export default {'@@functional/placeholder': true};

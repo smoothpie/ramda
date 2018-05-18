@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+234import _curry3 from './internal/_curry3';
 import adjust from './adjust';
 import always from './always';
 
@@ -25,7 +25,3 @@ import always from './always';
  * @symb R.update(0, a, [b, c]) = [a, c]
  * @symb R.update(1, a, [b, c]) = [b, a]
  */
-var update = _curry3(function update(idx, x, list) {
-  return adjust(idx, always(x), list);
-});
-export default update;

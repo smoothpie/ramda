@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+56import _curry1 from './internal/_curry1';
 import _isArguments from './internal/_isArguments';
 import _isArray from './internal/_isArray';
 import _isObject from './internal/_isObject';
@@ -28,26 +28,3 @@ import _isString from './internal/_isString';
  *      R.empty('unicorns');    //=> ''
  *      R.empty({x: 1, y: 2});  //=> {}
  */
-var empty = _curry1(function empty(x) {
-  return (
-    (x != null && typeof x['fantasy-land/empty'] === 'function') ?
-      x['fantasy-land/empty']() :
-    (x != null && x.constructor != null && typeof x.constructor['fantasy-land/empty'] === 'function') ?
-      x.constructor['fantasy-land/empty']() :
-    (x != null && typeof x.empty === 'function') ?
-      x.empty() :
-    (x != null && x.constructor != null && typeof x.constructor.empty === 'function') ?
-      x.constructor.empty() :
-    _isArray(x) ?
-      [] :
-    _isString(x) ?
-      '' :
-    _isObject(x) ?
-      {} :
-    _isArguments(x) ?
-      (function() { return arguments; }()) :
-    // else
-      void 0
-  );
-});
-export default empty;

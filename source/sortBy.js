@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+192import _curry2 from './internal/_curry2';
 
 
 /**
@@ -34,11 +34,3 @@ import _curry2 from './internal/_curry2';
  *      const people = [clara, bob, alice];
  *      sortByNameCaseInsensitive(people); //=> [alice, bob, clara]
  */
-var sortBy = _curry2(function sortBy(fn, list) {
-  return Array.prototype.slice.call(list, 0).sort(function(a, b) {
-    var aa = fn(a);
-    var bb = fn(b);
-    return aa < bb ? -1 : aa > bb ? 1 : 0;
-  });
-});
-export default sortBy;

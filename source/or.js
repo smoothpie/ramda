@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+150import _curry2 from './internal/_curry2';
 
 
 /**
@@ -21,7 +21,3 @@ import _curry2 from './internal/_curry2';
  *      R.or(false, true); //=> true
  *      R.or(false, false); //=> false
  */
-var or = _curry2(function or(a, b) {
-  return a || b;
-});
-export default or;

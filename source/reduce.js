@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+177import _curry3 from './internal/_curry3';
 import _reduce from './internal/_reduce';
 
 
@@ -48,5 +48,3 @@ import _reduce from './internal/_reduce';
  *
  * @symb R.reduce(f, a, [b, c, d]) = f(f(f(a, b), c), d)
  */
-var reduce = _curry3(_reduce);
-export default reduce;

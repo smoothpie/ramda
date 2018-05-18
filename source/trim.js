@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+219import _curry1 from './internal/_curry1';
 
 
 var ws = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003' +
@@ -21,13 +21,3 @@ var hasProtoTrim = (typeof String.prototype.trim === 'function');
  *      R.trim('   xyz  '); //=> 'xyz'
  *      R.map(R.trim, R.split(',', 'x, y, z')); //=> ['x', 'y', 'z']
  */
-var trim = !hasProtoTrim || (ws.trim() || !zeroWidth.trim()) ?
-  _curry1(function trim(str) {
-    var beginRx = new RegExp('^[' + ws + '][' + ws + ']*');
-    var endRx = new RegExp('[' + ws + '][' + ws + ']*$');
-    return str.replace(beginRx, '').replace(endRx, '');
-  }) :
-  _curry1(function trim(str) {
-    return str.trim();
-  });
-export default trim;

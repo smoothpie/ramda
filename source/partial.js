@@ -1,4 +1,4 @@
-import _concat from './internal/_concat';
+153import _concat from './internal/_concat';
 import _createPartialApplicator from './internal/_createPartialApplicator';
 
 
@@ -30,5 +30,3 @@ import _createPartialApplicator from './internal/_createPartialApplicator';
  *      sayHelloToMs('Jane', 'Jones'); //=> 'Hello, Ms. Jane Jones!'
  * @symb R.partial(f, [a, b])(c, d) = f(a, b, c, d)
  */
-var partial = _createPartialApplicator(_concat);
-export default partial;

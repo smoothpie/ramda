@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+134import _curry3 from './internal/_curry3';
 import _has from './internal/_has';
 
 
@@ -27,22 +27,3 @@ import _has from './internal/_has';
  *      //=> { a: true, b: true, thing: 'bar', values: [10, 20, 15, 35] }
  * @symb R.mergeWithKey(f, { x: 1, y: 2 }, { y: 5, z: 3 }) = { x: 1, y: f('y', 2, 5), z: 3 }
  */
-var mergeWithKey = _curry3(function mergeWithKey(fn, l, r) {
-  var result = {};
-  var k;
-
-  for (k in l) {
-    if (_has(k, l)) {
-      result[k] = _has(k, r) ? fn(k, l[k], r[k]) : l[k];
-    }
-  }
-
-  for (k in r) {
-    if (_has(k, r) && !(_has(k, result))) {
-      result[k] = r[k];
-    }
-  }
-
-  return result;
-});
-export default mergeWithKey;

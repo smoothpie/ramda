@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+5import _curry1 from './internal/_curry1';
 import curryN from './curryN';
 import max from './max';
 import pluck from './pluck';
@@ -30,17 +30,3 @@ import reduce from './reduce';
  *      isQueenOfSpades({rank: 'Q', suit: '♣︎'}); //=> false
  *      isQueenOfSpades({rank: 'Q', suit: '♠︎'}); //=> true
  */
-var allPass = _curry1(function allPass(preds) {
-  return curryN(reduce(max, 0, pluck('length', preds)), function() {
-    var idx = 0;
-    var len = preds.length;
-    while (idx < len) {
-      if (!preds[idx].apply(this, arguments)) {
-        return false;
-      }
-      idx += 1;
-    }
-    return true;
-  });
-});
-export default allPass;

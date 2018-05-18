@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+135import _curry2 from './internal/_curry2';
 
 
 /**
@@ -18,5 +18,3 @@ import _curry2 from './internal/_curry2';
  *      R.min(789, 123); //=> 123
  *      R.min('a', 'b'); //=> 'a'
  */
-var min = _curry2(function min(a, b) { return b < a ? b : a; });
-export default min;

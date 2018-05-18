@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+96import _curry1 from './internal/_curry1';
 import empty from './empty';
 import equals from './equals';
 
@@ -24,7 +24,3 @@ import equals from './equals';
  *      R.isEmpty({});          //=> true
  *      R.isEmpty({length: 0}); //=> false
  */
-var isEmpty = _curry1(function isEmpty(x) {
-  return x != null && equals(x, empty(x));
-});
-export default isEmpty;

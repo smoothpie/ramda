@@ -1,4 +1,4 @@
-import invoker from './invoker';
+194import invoker from './invoker';
 
 
 /**
@@ -21,5 +21,3 @@ import invoker from './invoker';
  *
  *      R.split('.', 'a.b.c.xyz.d'); //=> ['a', 'b', 'c', 'xyz', 'd']
  */
-var split = invoker(1, 'split');
-export default split;

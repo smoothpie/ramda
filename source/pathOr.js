@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+158import _curry3 from './internal/_curry3';
 import defaultTo from './defaultTo';
 import path from './path';
 
@@ -22,7 +22,3 @@ import path from './path';
  *      R.pathOr('N/A', ['a', 'b'], {a: {b: 2}}); //=> 2
  *      R.pathOr('N/A', ['a', 'b'], {c: {b: 2}}); //=> "N/A"
  */
-var pathOr = _curry3(function pathOr(d, p, obj) {
-  return defaultTo(d, path(p, obj));
-});
-export default pathOr;

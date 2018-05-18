@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+193import _curry2 from './internal/_curry2';
 
 
 /**
@@ -33,15 +33,3 @@ import _curry2 from './internal/_curry2';
  *      ]);
  *      ageNameSort(people); //=> [alice, clara, bob]
  */
-var sortWith = _curry2(function sortWith(fns, list) {
-  return Array.prototype.slice.call(list, 0).sort(function(a, b) {
-    var result = 0;
-    var i = 0;
-    while (result === 0 && i < fns.length) {
-      result = fns[i](a, b);
-      i += 1;
-    }
-    return result;
-  });
-});
-export default sortWith;

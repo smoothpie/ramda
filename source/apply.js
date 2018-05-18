@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+14import _curry2 from './internal/_curry2';
 
 
 /**
@@ -21,7 +21,3 @@ import _curry2 from './internal/_curry2';
  *      R.apply(Math.max, nums); //=> 42
  * @symb R.apply(f, [a, b, c]) = f(a, b, c)
  */
-var apply = _curry2(function apply(fn, args) {
-  return fn.apply(this, args);
-});
-export default apply;

@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+142import _curry1 from './internal/_curry1';
 
 
 /**
@@ -20,7 +20,3 @@ import _curry1 from './internal/_curry1';
  *      R.not(0); //=> true
  *      R.not(1); //=> false
  */
-var not = _curry1(function not(a) {
-  return !a;
-});
-export default not;

@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+237import _curry1 from './internal/_curry1';
 
 
 /**
@@ -22,12 +22,3 @@ import _curry1 from './internal/_curry1';
  *      const f = new F();
  *      R.valuesIn(f); //=> ['X', 'Y']
  */
-var valuesIn = _curry1(function valuesIn(obj) {
-  var prop;
-  var vs = [];
-  for (prop in obj) {
-    vs[vs.length] = obj[prop];
-  }
-  return vs;
-});
-export default valuesIn;

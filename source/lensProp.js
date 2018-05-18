@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+108import _curry1 from './internal/_curry1';
 import assoc from './assoc';
 import lens from './lens';
 import prop from './prop';
@@ -24,7 +24,3 @@ import prop from './prop';
  *      R.set(xLens, 4, {x: 1, y: 2});          //=> {x: 4, y: 2}
  *      R.over(xLens, R.negate, {x: 1, y: 2});  //=> {x: -1, y: 2}
  */
-var lensProp = _curry1(function lensProp(k) {
-  return lens(prop(k), assoc(k));
-});
-export default lensProp;

@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+68import _curry1 from './internal/_curry1';
 import curryN from './curryN';
 
 
@@ -22,12 +22,3 @@ import curryN from './curryN';
  *      R.flip(mergeThree)(1, 2, 3); //=> [2, 1, 3]
  * @symb R.flip(f)(a, b, c) = f(b, a, c)
  */
-var flip = _curry1(function flip(fn) {
-  return curryN(fn.length, function(a, b) {
-    var args = Array.prototype.slice.call(arguments, 0);
-    args[0] = b;
-    args[1] = a;
-    return fn.apply(this, args);
-  });
-});
-export default flip;

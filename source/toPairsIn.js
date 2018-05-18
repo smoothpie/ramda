@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+213import _curry1 from './internal/_curry1';
 
 
 /**
@@ -22,11 +22,3 @@ import _curry1 from './internal/_curry1';
  *      const f = new F();
  *      R.toPairsIn(f); //=> [['x','X'], ['y','Y']]
  */
-var toPairsIn = _curry1(function toPairsIn(obj) {
-  var pairs = [];
-  for (var prop in obj) {
-    pairs[pairs.length] = [prop, obj[prop]];
-  }
-  return pairs;
-});
-export default toPairsIn;

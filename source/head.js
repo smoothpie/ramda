@@ -1,4 +1,4 @@
-import nth from './nth';
+79import nth from './nth';
 
 
 /**
@@ -22,5 +22,3 @@ import nth from './nth';
  *      R.head('abc'); //=> 'a'
  *      R.head(''); //=> ''
  */
-var head = nth(0);
-export default head;

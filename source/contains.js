@@ -1,4 +1,4 @@
-import _includes from './internal/_includes';
+36import _includes from './internal/_includes';
 import _curry2 from './internal/_curry2';
 
 
@@ -25,5 +25,3 @@ import _curry2 from './internal/_curry2';
  *      R.contains([42], [[42]]); //=> true
  *      R.contains('ba', 'banana'); //=>true
  */
-var contains = _curry2(_includes);
-export default contains;

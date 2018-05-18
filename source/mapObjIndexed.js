@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+116import _curry2 from './internal/_curry2';
 import _reduce from './internal/_reduce';
 import keys from './keys';
 
@@ -24,10 +24,3 @@ import keys from './keys';
  *
  *      R.mapObjIndexed(prependKeyAndDouble, xyz); //=> { x: 'x2', y: 'y4', z: 'z6' }
  */
-var mapObjIndexed = _curry2(function mapObjIndexed(fn, obj) {
-  return _reduce(function(acc, key) {
-    acc[key] = fn(obj[key], key, obj);
-    return acc;
-  }, {}, keys(obj));
-});
-export default mapObjIndexed;

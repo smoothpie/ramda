@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+188import _curry2 from './internal/_curry2';
 import ap from './ap';
 import map from './map';
 import prepend from './prepend';
@@ -29,11 +29,3 @@ import reduceRight from './reduceRight';
  *      R.sequence(R.of, Just([1, 2, 3])); //=> [Just(1), Just(2), Just(3)]
  *      R.sequence(R.of, Nothing());       //=> [Nothing()]
  */
-var sequence = _curry2(function sequence(of, traversable) {
-  return typeof traversable.sequence === 'function' ?
-    traversable.sequence(of) :
-    reduceRight(function(x, acc) { return ap(map(prepend, x), acc); },
-                of([]),
-                traversable);
-});
-export default sequence;

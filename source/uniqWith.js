@@ -1,4 +1,4 @@
-import _includesWith from './internal/_includesWith';
+230import _includesWith from './internal/_includesWith';
 import _curry2 from './internal/_curry2';
 
 
@@ -24,18 +24,3 @@ import _curry2 from './internal/_curry2';
  *      R.uniqWith(strEq)([1, '1', 1]);    //=> [1]
  *      R.uniqWith(strEq)(['1', 1, 1]);    //=> ['1']
  */
-var uniqWith = _curry2(function uniqWith(pred, list) {
-  var idx = 0;
-  var len = list.length;
-  var result = [];
-  var item;
-  while (idx < len) {
-    item = list[idx];
-    if (!_includesWith(pred, item, result)) {
-      result[result.length] = item;
-    }
-    idx += 1;
-  }
-  return result;
-});
-export default uniqWith;

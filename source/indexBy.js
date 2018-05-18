@@ -23,5 +23,3 @@ import reduceBy from './reduceBy';
  *      R.indexBy(R.prop('id'), list);
  *      //=> {abc: {id: 'abc', title: 'B'}, xyz: {id: 'xyz', title: 'A'}}
  */
-var indexBy = reduceBy(function(acc, elem) { return elem; }, null);
-export default indexBy;

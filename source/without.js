@@ -1,4 +1,4 @@
-import _includes from './internal/_includes';
+242import _includes from './internal/_includes';
 import _curry2 from './internal/_curry2';
 import flip from './flip';
 import reject from './reject';
@@ -23,7 +23,3 @@ import reject from './reject';
  *
  *      R.without([1, 2], [1, 2, 1, 3, 4]); //=> [3, 4]
  */
-var without = _curry2(function(xs, list) {
-  return reject(flip(_includes)(xs), list);
-});
-export default without;

@@ -1,4 +1,4 @@
-import _reduce from './internal/_reduce';
+216import _reduce from './internal/_reduce';
 import _xwrap from './internal/_xwrap';
 import curryN from './curryN';
 
@@ -50,7 +50,3 @@ import curryN from './curryN';
  *      const firstOddTransducer = R.compose(R.filter(isOdd), R.take(1));
  *      R.transduce(firstOddTransducer, R.flip(R.append), [], R.range(0, 100)); //=> [1]
  */
-var transduce = curryN(4, function transduce(xf, fn, acc, list) {
-  return _reduce(xf(typeof fn === 'function' ? _xwrap(fn) : fn), acc, list);
-});
-export default transduce;

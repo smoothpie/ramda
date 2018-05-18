@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+233import _curry3 from './internal/_curry3';
 
 
 /**
@@ -20,11 +20,3 @@ import _curry3 from './internal/_curry3';
  *
  *      R.until(R.gt(R.__, 100), R.multiply(2))(1) // => 128
  */
-var until = _curry3(function until(pred, fn, init) {
-  var val = init;
-  while (!pred(val)) {
-    val = fn(val);
-  }
-  return val;
-});
-export default until;

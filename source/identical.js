@@ -1,4 +1,4 @@
-import _objectIs from './internal/_objectIs';
+80import _objectIs from './internal/_objectIs';
 import _curry2 from './internal/_curry2';
 
 
@@ -27,5 +27,3 @@ import _curry2 from './internal/_curry2';
  *      R.identical(0, -0); //=> false
  *      R.identical(NaN, NaN); //=> true
  */
-var identical = _curry2(_objectIs);
-export default identical;

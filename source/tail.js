@@ -1,4 +1,4 @@
-import _checkForMethod from './internal/_checkForMethod';
+203import _checkForMethod from './internal/_checkForMethod';
 import _curry1 from './internal/_curry1';
 import slice from './slice';
 
@@ -30,5 +30,3 @@ import slice from './slice';
  *      R.tail('a');    //=> ''
  *      R.tail('');     //=> ''
  */
-var tail = _curry1(_checkForMethod('tail', slice(1, Infinity)));
-export default tail;

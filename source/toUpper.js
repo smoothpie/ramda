@@ -1,4 +1,4 @@
-import invoker from './invoker';
+215import invoker from './invoker';
 
 
 /**
@@ -16,5 +16,3 @@ import invoker from './invoker';
  *
  *      R.toUpper('abc'); //=> 'ABC'
  */
-var toUpper = invoker(0, 'toUpperCase');
-export default toUpper;

@@ -1,4 +1,4 @@
-import identity from './identity';
+228import identity from './identity';
 import uniqBy from './uniqBy';
 
 
@@ -19,5 +19,3 @@ import uniqBy from './uniqBy';
  *      R.uniq([1, '1']);     //=> [1, '1']
  *      R.uniq([[42], [42]]); //=> [[42]]
  */
-var uniq = uniqBy(identity);
-export default uniq;

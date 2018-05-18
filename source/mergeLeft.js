@@ -1,4 +1,4 @@
-import _objectAssign from './internal/_objectAssign';
+131import _objectAssign from './internal/_objectAssign';
 import _curry2 from './internal/_curry2';
 
 
@@ -24,7 +24,3 @@ import _curry2 from './internal/_curry2';
  *      resetToDefault({x: 5, y: 2}); //=> {x: 0, y: 2}
  * @symb R.mergeLeft(a, b) = {...b, ...a}
  */
-var mergeLeft = _curry2(function mergeLeft(l, r) {
-  return _objectAssign({}, r, l);
-});
-export default mergeLeft;

@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+198import _curry2 from './internal/_curry2';
 import equals from './equals';
 import take from './take';
 
@@ -24,7 +24,3 @@ import take from './take';
  *      R.startsWith(['a'], ['a', 'b', 'c'])    //=> true
  *      R.startsWith(['b'], ['a', 'b', 'c'])    //=> false
  */
-var startsWith = _curry2(function(prefix, list) {
-  return equals(take(prefix.length, list), prefix);
-});
-export default startsWith;

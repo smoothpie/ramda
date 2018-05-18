@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+129import _curry3 from './internal/_curry3';
 import mergeDeepWithKey from './mergeDeepWithKey';
 
 
@@ -29,9 +29,3 @@ import mergeDeepWithKey from './mergeDeepWithKey';
  *                      { b: true, c: { values: [15, 35] }});
  *      //=> { a: true, b: true, c: { values: [10, 20, 15, 35] }}
  */
-var mergeDeepWith = _curry3(function mergeDeepWith(fn, lObj, rObj) {
-  return mergeDeepWithKey(function(k, lVal, rVal) {
-    return fn(lVal, rVal);
-  }, lObj, rObj);
-});
-export default mergeDeepWith;

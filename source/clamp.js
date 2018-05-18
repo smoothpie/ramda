@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+25import _curry3 from './internal/_curry3';
 
 /**
  * Restricts a number to be within a range.
@@ -20,12 +20,3 @@ import _curry3 from './internal/_curry3';
  *      R.clamp(1, 10, 15) // => 10
  *      R.clamp(1, 10, 4)  // => 4
  */
-var clamp = _curry3(function clamp(min, max, value) {
-  if (min > max) {
-    throw new Error('min must not be greater than max in clamp(min, max, value)');
-  }
-  return value < min ? min :
-         value > max ? max :
-         value;
-});
-export default clamp;

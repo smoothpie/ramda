@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+205import _curry2 from './internal/_curry2';
 import drop from './drop';
 
 
@@ -24,7 +24,3 @@ import drop from './drop';
  *      R.takeLast(4, ['foo', 'bar', 'baz']); //=> ['foo', 'bar', 'baz']
  *      R.takeLast(3, 'ramda');               //=> 'mda'
  */
-var takeLast = _curry2(function takeLast(n, xs) {
-  return drop(n >= 0 ? xs.length - n : 0, xs);
-});
-export default takeLast;

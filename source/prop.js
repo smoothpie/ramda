@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+170import _curry2 from './internal/_curry2';
 import path from './path';
 
 
@@ -21,6 +21,3 @@ import path from './path';
  *      R.prop('x', {}); //=> undefined
  *      R.compose(R.inc, R.prop('x'))({ x: 3 }) //=> 4
  */
-
-var prop = _curry2(function prop(p, obj) { return path([p], obj); });
-export default prop;

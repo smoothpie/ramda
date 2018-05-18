@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+66import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _xfindLastIndex from './internal/_xfindLastIndex';
 
@@ -25,14 +25,3 @@ import _xfindLastIndex from './internal/_xfindLastIndex';
  *      R.findLastIndex(R.propEq('a', 1))(xs); //=> 1
  *      R.findLastIndex(R.propEq('a', 4))(xs); //=> -1
  */
-var findLastIndex = _curry2(_dispatchable([], _xfindLastIndex, function findLastIndex(fn, list) {
-  var idx = list.length - 1;
-  while (idx >= 0) {
-    if (fn(list[idx])) {
-      return idx;
-    }
-    idx -= 1;
-  }
-  return -1;
-}));
-export default findLastIndex;

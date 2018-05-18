@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+107import _curry1 from './internal/_curry1';
 import assocPath from './assocPath';
 import lens from './lens';
 import path from './path';
@@ -28,7 +28,3 @@ import path from './path';
  *      R.over(xHeadYLens, R.negate, {x: [{y: 2, z: 3}, {y: 4, z: 5}]});
  *      //=> {x: [{y: -2, z: 3}, {y: 4, z: 5}]}
  */
-var lensPath = _curry1(function lensPath(p) {
-  return lens(path(p), assocPath(p));
-});
-export default lensPath;

@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+65import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _xfindLast from './internal/_xfindLast';
 
@@ -25,13 +25,3 @@ import _xfindLast from './internal/_xfindLast';
  *      R.findLast(R.propEq('a', 1))(xs); //=> {a: 1, b: 1}
  *      R.findLast(R.propEq('a', 4))(xs); //=> undefined
  */
-var findLast = _curry2(_dispatchable([], _xfindLast, function findLast(fn, list) {
-  var idx = list.length - 1;
-  while (idx >= 0) {
-    if (fn(list[idx])) {
-      return list[idx];
-    }
-    idx -= 1;
-  }
-}));
-export default findLast;

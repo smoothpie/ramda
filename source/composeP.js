@@ -1,4 +1,4 @@
-import pipeP from './pipeP';
+31import pipeP from './pipeP';
 import reverse from './reverse';
 
 
@@ -36,9 +36,3 @@ import reverse from './reverse';
  *      followersForUser('JOE').then(followers => console.log('Followers:', followers))
  *      // Followers: ["STEVE","SUZY"]
  */
-export default function composeP() {
-  if (arguments.length === 0) {
-    throw new Error('composeP requires at least one argument');
-  }
-  return pipeP.apply(this, reverse(arguments));
-}

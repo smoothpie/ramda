@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+34import _curry1 from './internal/_curry1';
 import constructN from './constructN';
 
 
@@ -34,7 +34,3 @@ import constructN from './constructN';
  *      const sightNewAnimal = R.compose(animalSighting, AnimalConstructor);
  *      R.map(sightNewAnimal, animalTypes); //=> ["It's a Lion!", "It's a Tiger!", "It's a Bear!"]
  */
-var construct = _curry1(function construct(Fn) {
-  return constructN(Fn.length, Fn);
-});
-export default construct;

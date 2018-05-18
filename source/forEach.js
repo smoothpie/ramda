@@ -1,4 +1,4 @@
-import _checkForMethod from './internal/_checkForMethod';
+69import _checkForMethod from './internal/_checkForMethod';
 import _curry2 from './internal/_curry2';
 
 
@@ -36,13 +36,3 @@ import _curry2 from './internal/_curry2';
  *      // logs 8
  * @symb R.forEach(f, [a, b, c]) = [a, b, c]
  */
-var forEach = _curry2(_checkForMethod('forEach', function forEach(fn, list) {
-  var len = list.length;
-  var idx = 0;
-  while (idx < len) {
-    fn(list[idx]);
-    idx += 1;
-  }
-  return list;
-}));
-export default forEach;

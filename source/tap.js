@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+208import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _xtap from './internal/_xtap';
 
@@ -23,8 +23,3 @@ import _xtap from './internal/_xtap';
  *      // logs 'x is 100'
  * @symb R.tap(f, a) = a
  */
-var tap = _curry2(_dispatchable([], _xtap, function tap(fn, x) {
-  fn(x);
-  return x;
-}));
-export default tap;

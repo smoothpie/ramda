@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+82import _curry3 from './internal/_curry3';
 import curryN from './curryN';
 
 
@@ -27,11 +27,3 @@ import curryN from './curryN';
  *      incCount({});           //=> { count: 1 }
  *      incCount({ count: 1 }); //=> { count: 2 }
  */
-var ifElse = _curry3(function ifElse(condition, onTrue, onFalse) {
-  return curryN(Math.max(condition.length, onTrue.length, onFalse.length),
-    function _ifElse() {
-      return condition.apply(this, arguments) ? onTrue.apply(this, arguments) : onFalse.apply(this, arguments);
-    }
-  );
-});
-export default ifElse;

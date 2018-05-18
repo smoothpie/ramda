@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+8import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _xany from './internal/_xany';
 
@@ -28,14 +28,3 @@ import _xany from './internal/_xany';
  *      R.any(lessThan0)([1, 2]); //=> false
  *      R.any(lessThan2)([1, 2]); //=> true
  */
-var any = _curry2(_dispatchable(['any'], _xany, function any(fn, list) {
-  var idx = 0;
-  while (idx < list.length) {
-    if (fn(list[idx])) {
-      return true;
-    }
-    idx += 1;
-  }
-  return false;
-}));
-export default any;

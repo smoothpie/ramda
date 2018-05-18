@@ -1,4 +1,4 @@
-import _concat from './internal/_concat';
+3import _concat from './internal/_concat';
 import _curry3 from './internal/_curry3';
 
 
@@ -27,14 +27,3 @@ import _curry3 from './internal/_curry3';
  * @symb R.adjust(-1, f, [a, b]) = [a, f(b)]
  * @symb R.adjust(0, f, [a, b]) = [f(a), b]
  */
-var adjust = _curry3(function adjust(idx, fn, list) {
-  if (idx >= list.length || idx < -list.length) {
-    return list;
-  }
-  var start = idx < 0 ? list.length : 0;
-  var _idx = start + idx;
-  var _list = _concat(list);
-  _list[_idx] = fn(list[_idx]);
-  return _list;
-});
-export default adjust;

@@ -1,4 +1,4 @@
-import _includes from './internal/_includes';
+84import _includes from './internal/_includes';
 import _curry2 from './internal/_curry2';
 
 /**
@@ -23,5 +23,3 @@ import _curry2 from './internal/_curry2';
  *      R.includes([42], [[42]]); //=> true
  *      R.includes('ba', 'banana'); //=>true
  */
-var includes = _curry2(_includes);
-export default includes;

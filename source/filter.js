@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+62import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _filter from './internal/_filter';
 import _isObject from './internal/_isObject';
@@ -34,17 +34,3 @@ import keys from './keys';
  *
  *      R.filter(isEven, {a: 1, b: 2, c: 3, d: 4}); //=> {b: 2, d: 4}
  */
-var filter = _curry2(_dispatchable(['filter'], _xfilter, function(pred, filterable) {
-  return (
-    _isObject(filterable) ?
-      _reduce(function(acc, key) {
-        if (pred(filterable[key])) {
-          acc[key] = filterable[key];
-        }
-        return acc;
-      }, {}, keys(filterable)) :
-    // else
-      _filter(pred, filterable)
-  );
-}));
-export default filter;

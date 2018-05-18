@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+144import _curry1 from './internal/_curry1';
 import curryN from './curryN';
 import nth from './nth';
 
@@ -21,10 +21,3 @@ import nth from './nth';
  * @symb R.nthArg(0)(a, b, c) = a
  * @symb R.nthArg(1)(a, b, c) = b
  */
-var nthArg = _curry1(function nthArg(n) {
-  var arity = n < 0 ? 1 : n + 1;
-  return curryN(arity, function() {
-    return nth(n, arguments);
-  });
-});
-export default nthArg;

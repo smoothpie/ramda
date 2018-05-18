@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+61import _curry2 from './internal/_curry2';
 
 
 /**
@@ -28,16 +28,3 @@ import _curry2 from './internal/_curry2';
  *      };
  *      R.evolve(transformations, tomato); //=> {firstName: 'Tomato', data: {elapsed: 101, remaining: 1399}, id:123}
  */
-var evolve = _curry2(function evolve(transformations, object) {
-  var result = {};
-  var transformation, key, type;
-  for (key in object) {
-    transformation = transformations[key];
-    type = typeof transformation;
-    result[key] = type === 'function'                 ? transformation(object[key])
-                : transformation && type === 'object' ? evolve(transformation, object[key])
-                                                      : object[key];
-  }
-  return result;
-});
-export default evolve;

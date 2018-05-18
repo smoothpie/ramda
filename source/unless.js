@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+231import _curry3 from './internal/_curry3';
 
 
 /**
@@ -25,7 +25,3 @@ import _curry3 from './internal/_curry3';
  *      safeInc(null); //=> null
  *      safeInc(1); //=> 2
  */
-var unless = _curry3(function unless(pred, whenFalseFn, x) {
-  return pred(x) ? x : whenFalseFn(x);
-});
-export default unless;

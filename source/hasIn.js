@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+77import _curry2 from './internal/_curry2';
 
 
 /**
@@ -27,7 +27,3 @@ import _curry2 from './internal/_curry2';
  *      R.hasIn('width', square);  //=> true
  *      R.hasIn('area', square);  //=> true
  */
-var hasIn = _curry2(function hasIn(prop, obj) {
-  return prop in obj;
-});
-export default hasIn;

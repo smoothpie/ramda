@@ -1,4 +1,4 @@
-import nth from './nth';
+102import nth from './nth';
 
 
 /**
@@ -21,5 +21,3 @@ import nth from './nth';
  *      R.last('abc'); //=> 'c'
  *      R.last(''); //=> ''
  */
-var last = nth(-1);
-export default last;

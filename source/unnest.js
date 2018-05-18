@@ -1,4 +1,4 @@
-import _identity from './internal/_identity';
+232import _identity from './internal/_identity';
 import chain from './chain';
 
 
@@ -19,5 +19,3 @@ import chain from './chain';
  *      R.unnest([1, [2], [[3]]]); //=> [1, 2, [3]]
  *      R.unnest([[1, 2], [3, 4], [5, 6]]); //=> [1, 2, 3, 4, 5, 6]
  */
-var unnest = chain(_identity);
-export default unnest;

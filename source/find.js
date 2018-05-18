@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+63import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _xfind from './internal/_xfind';
 
@@ -27,14 +27,3 @@ import _xfind from './internal/_xfind';
  *      R.find(R.propEq('a', 2))(xs); //=> {a: 2}
  *      R.find(R.propEq('a', 4))(xs); //=> undefined
  */
-var find = _curry2(_dispatchable(['find'], _xfind, function find(fn, list) {
-  var idx = 0;
-  var len = list.length;
-  while (idx < len) {
-    if (fn(list[idx])) {
-      return list[idx];
-    }
-    idx += 1;
-  }
-}));
-export default find;

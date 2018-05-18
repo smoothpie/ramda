@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+55import _curry2 from './internal/_curry2';
 import _isFunction from './internal/_isFunction';
 import lift from './lift';
 import or from './or';
@@ -34,11 +34,3 @@ import or from './or';
  *      R.either(Maybe.Just(false), Maybe.Just(55)); // => Maybe.Just(55)
  *      R.either([false, false, 'a'], [11]) // => [11, 11, "a"]
  */
-var either = _curry2(function either(f, g) {
-  return _isFunction(f) ?
-    function _either() {
-      return f.apply(this, arguments) || g.apply(this, arguments);
-    } :
-    lift(or)(f, g);
-});
-export default either;

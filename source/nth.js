@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+143import _curry2 from './internal/_curry2';
 import _isString from './internal/_isString';
 
 
@@ -28,8 +28,3 @@ import _isString from './internal/_isString';
  * @symb R.nth(0, [a, b, c]) = a
  * @symb R.nth(1, [a, b, c]) = b
  */
-var nth = _curry2(function nth(offset, list) {
-  var idx = offset < 0 ? list.length + offset : offset;
-  return _isString(list) ? list.charAt(idx) : list[idx];
-});
-export default nth;

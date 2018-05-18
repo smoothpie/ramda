@@ -1,4 +1,4 @@
-import _arity from './internal/_arity';
+124import _arity from './internal/_arity';
 import _curry2 from './internal/_curry2';
 import _has from './internal/_has';
 
@@ -32,14 +32,3 @@ import _has from './internal/_has';
  *      factorial(5); //=> 120
  *      count; //=> 1
  */
-var memoizeWith = _curry2(function memoizeWith(mFn, fn) {
-  var cache = {};
-  return _arity(fn.length, function() {
-    var key = mFn.apply(this, arguments);
-    if (!_has(key, cache)) {
-      cache[key] = fn.apply(this, arguments);
-    }
-    return cache[key];
-  });
-});
-export default memoizeWith;

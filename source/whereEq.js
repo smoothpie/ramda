@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+241import _curry2 from './internal/_curry2';
 import equals from './equals';
 import map from './map';
 import where from './where';
@@ -32,7 +32,3 @@ import where from './where';
  *      pred({a: 1, b: 2, c: 3});  //=> true
  *      pred({a: 1, b: 1});        //=> false
  */
-var whereEq = _curry2(function whereEq(spec, testObj) {
-  return where(map(equals, spec), testObj);
-});
-export default whereEq;

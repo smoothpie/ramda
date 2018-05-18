@@ -1,4 +1,4 @@
-import lift from './lift';
+28import lift from './lift';
 import not from './not';
 
 
@@ -24,5 +24,3 @@ import not from './not';
  *      isNil(7); //=> false
  *      isNotNil(7); //=> true
  */
-var complement = lift(not);
-export default complement;

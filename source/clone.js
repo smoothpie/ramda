@@ -1,4 +1,4 @@
-import _clone from './internal/_clone';
+26import _clone from './internal/_clone';
 import _curry1 from './internal/_curry1';
 
 
@@ -23,9 +23,3 @@ import _curry1 from './internal/_curry1';
  *      objects === objectsClone; //=> false
  *      objects[0] === objectsClone[0]; //=> false
  */
-var clone = _curry1(function clone(value) {
-  return value != null && typeof value.clone === 'function' ?
-    value.clone() :
-    _clone(value, [], [], true);
-});
-export default clone;

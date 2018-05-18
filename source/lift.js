@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+109import _curry1 from './internal/_curry1';
 import liftN from './liftN';
 
 
@@ -24,7 +24,3 @@ import liftN from './liftN';
  *
  *      madd5([1,2], [3], [4, 5], [6], [7, 8]); //=> [21, 22, 22, 23, 22, 23, 23, 24]
  */
-var lift = _curry1(function lift(fn) {
-  return liftN(fn.length, fn);
-});
-export default lift;

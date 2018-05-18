@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+60import _curry2 from './internal/_curry2';
 import _equals from './internal/_equals';
 
 
@@ -27,7 +27,3 @@ import _equals from './internal/_equals';
  *      const b = {}; b.v = b;
  *      R.equals(a, b); //=> true
  */
-var equals = _curry2(function equals(a, b) {
-  return _equals(a, b, [], []);
-});
-export default equals;

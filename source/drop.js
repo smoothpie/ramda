@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+49import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _xdrop from './internal/_xdrop';
 import slice from './slice';
@@ -28,7 +28,3 @@ import slice from './slice';
  *      R.drop(4, ['foo', 'bar', 'baz']); //=> []
  *      R.drop(3, 'ramda');               //=> 'da'
  */
-var drop = _curry2(_dispatchable(['drop'], _xdrop, function drop(n, xs) {
-  return slice(Math.max(0, n), Infinity, xs);
-}));
-export default drop;

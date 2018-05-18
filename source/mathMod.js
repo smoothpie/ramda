@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+118import _curry2 from './internal/_curry2';
 import _isInteger from './internal/_isInteger';
 
 
@@ -35,9 +35,3 @@ import _isInteger from './internal/_isInteger';
  *      seventeenMod(4);  //=> 1
  *      seventeenMod(10); //=> 7
  */
-var mathMod = _curry2(function mathMod(m, p) {
-  if (!_isInteger(m)) { return NaN; }
-  if (!_isInteger(p) || p < 1) { return NaN; }
-  return ((m % p) + p) % p;
-});
-export default mathMod;

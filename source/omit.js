@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+148import _curry2 from './internal/_curry2';
 
 /**
  * Returns a partial copy of an object omitting the keys specified.
@@ -16,22 +16,3 @@ import _curry2 from './internal/_curry2';
  *
  *      R.omit(['a', 'd'], {a: 1, b: 2, c: 3, d: 4}); //=> {b: 2, c: 3}
  */
-var omit = _curry2(function omit(names, obj) {
-  var result = {};
-  var index = {};
-  var idx = 0;
-  var len = names.length;
-
-  while (idx < len) {
-    index[names[idx]] = 1;
-    idx += 1;
-  }
-
-  for (var prop in obj) {
-    if (!index.hasOwnProperty(prop)) {
-      result[prop] = obj[prop];
-    }
-  }
-  return result;
-});
-export default omit;

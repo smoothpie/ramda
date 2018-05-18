@@ -16,5 +16,3 @@ import always from './always';
  *
  *      R.T(); //=> true
  */
-var T = always(true);
-export default T;

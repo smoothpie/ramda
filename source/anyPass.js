@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+9import _curry1 from './internal/_curry1';
 import curryN from './curryN';
 import max from './max';
 import pluck from './pluck';
@@ -31,17 +31,3 @@ import reduce from './reduce';
  *      isBlackCard({rank: 'Q', suit: '♠'}); //=> true
  *      isBlackCard({rank: 'Q', suit: '♦'}); //=> false
  */
-var anyPass = _curry1(function anyPass(preds) {
-  return curryN(reduce(max, 0, pluck('length', preds)), function() {
-    var idx = 0;
-    var len = preds.length;
-    while (idx < len) {
-      if (preds[idx].apply(this, arguments)) {
-        return true;
-      }
-      idx += 1;
-    }
-    return false;
-  });
-});
-export default anyPass;

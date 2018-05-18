@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+184import _curry2 from './internal/_curry2';
 import always from './always';
 import times from './times';
 
@@ -26,7 +26,3 @@ import times from './times';
  * @symb R.repeat(a, 1) = [a]
  * @symb R.repeat(a, 2) = [a, a]
  */
-var repeat = _curry2(function repeat(value, n) {
-  return times(always(value), n);
-});
-export default repeat;

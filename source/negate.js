@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+140import _curry1 from './internal/_curry1';
 
 
 /**
@@ -15,5 +15,3 @@ import _curry1 from './internal/_curry1';
  *
  *      R.negate(42); //=> -42
  */
-var negate = _curry1(function negate(n) { return -n; });
-export default negate;

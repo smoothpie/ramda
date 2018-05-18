@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+147import _curry1 from './internal/_curry1';
 import _of from './internal/_of';
 
 
@@ -20,5 +20,3 @@ import _of from './internal/_of';
  *      R.of(null); //=> [null]
  *      R.of([42]); //=> [[42]]
  */
-var of = _curry1(_of);
-export default of;

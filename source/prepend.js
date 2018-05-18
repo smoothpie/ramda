@@ -1,4 +1,4 @@
-import _concat from './internal/_concat';
+167import _concat from './internal/_concat';
 import _curry2 from './internal/_curry2';
 
 
@@ -19,7 +19,3 @@ import _curry2 from './internal/_curry2';
  *
  *      R.prepend('fee', ['fi', 'fo', 'fum']); //=> ['fee', 'fi', 'fo', 'fum']
  */
-var prepend = _curry2(function prepend(el, list) {
-  return _concat([el], list);
-});
-export default prepend;

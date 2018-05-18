@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+94import _curry2 from './internal/_curry2';
 import _isFunction from './internal/_isFunction';
 import curryN from './curryN';
 import toString from './toString';
@@ -31,13 +31,3 @@ import toString from './toString';
  * @symb R.invoker(1, 'method')(a, o) = o['method'](a)
  * @symb R.invoker(2, 'method')(a, b, o) = o['method'](a, b)
  */
-var invoker = _curry2(function invoker(arity, method) {
-  return curryN(arity + 1, function() {
-    var target = arguments[arity];
-    if (target != null && _isFunction(target[method])) {
-      return target[method].apply(target, Array.prototype.slice.call(arguments, 0, arity));
-    }
-    throw new TypeError(toString(target) + ' does not have a method named "' + method + '"');
-  });
-});
-export default invoker;

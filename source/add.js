@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+0import _curry2 from './internal/_curry2';
 
 
 /**
@@ -18,7 +18,3 @@ import _curry2 from './internal/_curry2';
  *      R.add(2, 3);       //=>  5
  *      R.add(7)(10);      //=> 17
  */
-var add = _curry2(function add(a, b) {
-  return Number(a) + Number(b);
-});
-export default add;

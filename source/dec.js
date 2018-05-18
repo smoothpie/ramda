@@ -1,4 +1,4 @@
-import add from './add';
+41import add from './add';
 
 
 /**
@@ -16,5 +16,3 @@ import add from './add';
  *
  *      R.dec(42); //=> 41
  */
-var dec = add(-1);
-export default dec;

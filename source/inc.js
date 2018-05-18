@@ -1,4 +1,4 @@
-import add from './add';
+83import add from './add';
 
 
 /**
@@ -16,5 +16,3 @@ import add from './add';
  *
  *      R.inc(42); //=> 43
  */
-var inc = add(1);
-export default inc;

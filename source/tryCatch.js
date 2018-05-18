@@ -1,4 +1,4 @@
-import _arity from './internal/_arity';
+220import _arity from './internal/_arity';
 import _concat from './internal/_concat';
 import _curry2 from './internal/_curry2';
 
@@ -24,13 +24,3 @@ import _curry2 from './internal/_curry2';
  *      R.tryCatch(() => { throw 'foo'}, R.always('catched'))('bar') // => 'catched'
  *      R.tryCatch(R.times(R.identity), R.always([]))('s') // => []
  `` */
-var tryCatch = _curry2(function _tryCatch(tryer, catcher) {
-  return _arity(tryer.length, function() {
-    try {
-      return tryer.apply(this, arguments);
-    } catch (e) {
-      return catcher.apply(this, _concat([e], arguments));
-    }
-  });
-});
-export default tryCatch;

@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+78import _curry2 from './internal/_curry2';
 import _has from './internal/_has';
 
 
@@ -23,20 +23,3 @@ import _has from './internal/_has';
  *      R.hasPath(['a', 'b'], {a: {c: 2}});         // => false
  *      R.hasPath(['a', 'b'], {});                  // => false
  */
-var hasPath = _curry2(function hasPath(_path, obj) {
-  if (_path.length === 0) {
-    return false;
-  }
-  var val = obj;
-  var idx = 0;
-  while (idx < _path.length) {
-    if (_has(_path[idx], val)) {
-      val = val[_path[idx]];
-      idx += 1;
-    } else {
-      return false;
-    }
-  }
-  return true;
-});
-export default hasPath;

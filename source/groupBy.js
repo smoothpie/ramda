@@ -1,4 +1,4 @@
-import _checkForMethod from './internal/_checkForMethod';
+72import _checkForMethod from './internal/_checkForMethod';
 import _curry2 from './internal/_curry2';
 import reduceBy from './reduceBy';
 
@@ -42,11 +42,3 @@ import reduceBy from './reduceBy';
  *      //   'F': [{name: 'Eddy', score: 58}]
  *      // }
  */
-var groupBy = _curry2(_checkForMethod('groupBy', reduceBy(function(acc, item) {
-  if (acc == null) {
-    acc = [];
-  }
-  acc.push(item);
-  return acc;
-}, null)));
-export default groupBy;

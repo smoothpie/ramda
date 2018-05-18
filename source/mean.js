@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+121import _curry1 from './internal/_curry1';
 import sum from './sum';
 
 
@@ -18,7 +18,3 @@ import sum from './sum';
  *      R.mean([2, 7, 9]); //=> 6
  *      R.mean([]); //=> NaN
  */
-var mean = _curry1(function mean(list) {
-  return sum(list) / list.length;
-});
-export default mean;

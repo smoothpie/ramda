@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+172import _curry3 from './internal/_curry3';
 import is from './is';
 
 
@@ -22,7 +22,3 @@ import is from './is';
  *      R.propIs(Number, 'x', {x: 'foo'});    //=> false
  *      R.propIs(Number, 'x', {});            //=> false
  */
-var propIs = _curry3(function propIs(type, name, obj) {
-  return is(type, obj[name]);
-});
-export default propIs;

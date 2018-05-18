@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+210import _curry2 from './internal/_curry2';
 
 
 /**
@@ -24,19 +24,3 @@ import _curry2 from './internal/_curry2';
  * @symb R.times(f, 1) = [f(0)]
  * @symb R.times(f, 2) = [f(0), f(1)]
  */
-var times = _curry2(function times(fn, n) {
-  var len = Number(n);
-  var idx = 0;
-  var list;
-
-  if (len < 0 || isNaN(len)) {
-    throw new RangeError('n must be a non-negative number');
-  }
-  list = new Array(len);
-  while (idx < len) {
-    list[idx] = fn(idx);
-    idx += 1;
-  }
-  return list;
-});
-export default times;

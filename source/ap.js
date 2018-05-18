@@ -1,4 +1,4 @@
-import _concat from './internal/_concat';
+10import _concat from './internal/_concat';
 import _curry2 from './internal/_curry2';
 import _reduce from './internal/_reduce';
 import map from './map';
@@ -30,16 +30,3 @@ import map from './map';
  *      R.ap(R.concat, R.toUpper)('Ramda') //=> 'RamdaRAMDA'
  * @symb R.ap([f, g], [a, b]) = [f(a), f(b), g(a), g(b)]
  */
-var ap = _curry2(function ap(applyF, applyX) {
-  return (
-    typeof applyX['fantasy-land/ap'] === 'function' ?
-      applyX['fantasy-land/ap'](applyF) :
-    typeof applyF.ap === 'function' ?
-      applyF.ap(applyX) :
-    typeof applyF === 'function' ?
-      function(x) { return applyF(x)(applyX(x)); } :
-    // else
-      _reduce(function(acc, f) { return _concat(acc, map(f, applyX)); }, [], applyF)
-  );
-});
-export default ap;

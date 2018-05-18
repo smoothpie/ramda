@@ -1,4 +1,4 @@
-import memoizeWith from './memoizeWith';
+123import memoizeWith from './memoizeWith';
 import toString from './toString';
 
 
@@ -30,7 +30,3 @@ import toString from './toString';
  *      factorial(5); //=> 120
  *      count; //=> 1
  */
-var memoize = memoizeWith(function() {
-  return toString(arguments);
-});
-export default memoize;

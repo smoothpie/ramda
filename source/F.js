@@ -16,5 +16,3 @@ import always from './always';
  *
  *      R.F(); //=> false
  */
-var F = always(false);
-export default F;

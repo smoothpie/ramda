@@ -1,4 +1,4 @@
-import _curryN from './internal/_curryN';
+180import _curryN from './internal/_curryN';
 import _reduce from './internal/_reduce';
 import _reduced from './internal/_reduced';
 
@@ -32,9 +32,3 @@ import _reduced from './internal/_reduced';
  *      const ys = [2, 4, 6]
  *      R.reduceWhile(isOdd, R.add, 111, ys); //=> 111
  */
-var reduceWhile = _curryN(4, [], function _reduceWhile(pred, fn, a, list) {
-  return _reduce(function(acc, x) {
-    return pred(acc, x) ? fn(acc, x) : _reduced(acc);
-  }, a, list);
-});
-export default reduceWhile;

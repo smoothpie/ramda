@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+133import _curry3 from './internal/_curry3';
 import mergeWithKey from './mergeWithKey';
 
 
@@ -25,9 +25,3 @@ import mergeWithKey from './mergeWithKey';
  *                  { b: true, values: [15, 35] });
  *      //=> { a: true, b: true, values: [10, 20, 15, 35] }
  */
-var mergeWith = _curry3(function mergeWith(fn, l, r) {
-  return mergeWithKey(function(_, _l, _r) {
-    return fn(_l, _r);
-  }, l, r);
-});
-export default mergeWith;

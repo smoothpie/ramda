@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+75import _curry2 from './internal/_curry2';
 
 
 /**
@@ -22,5 +22,3 @@ import _curry2 from './internal/_curry2';
  *      R.gte('a', 'z'); //=> false
  *      R.gte('z', 'a'); //=> true
  */
-var gte = _curry2(function gte(a, b) { return a >= b; });
-export default gte;

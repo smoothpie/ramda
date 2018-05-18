@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+152import _curry2 from './internal/_curry2';
 
 
 /**
@@ -17,5 +17,3 @@ import _curry2 from './internal/_curry2';
  *
  *      R.pair('foo', 'bar'); //=> ['foo', 'bar']
  */
-var pair = _curry2(function pair(fst, snd) { return [fst, snd]; });
-export default pair;

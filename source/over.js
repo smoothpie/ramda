@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+151import _curry3 from './internal/_curry3';
 
 // `Identity` is a functor that holds a single value, where `map` simply
 // transforms the held value with the provided function.
@@ -29,10 +29,3 @@ var Identity = function(x) {
  *
  *      R.over(headLens, R.toUpper, ['foo', 'bar', 'baz']); //=> ['FOO', 'bar', 'baz']
  */
-var over = _curry3(function over(lens, f, x) {
-  // The value returned by the getter function is first transformed with `f`,
-  // then set as the value of an `Identity`. This is then mapped over with the
-  // setter function of the lens.
-  return lens(function(y) { return Identity(f(y)); })(x).value;
-});
-export default over;

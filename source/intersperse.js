@@ -19,18 +19,3 @@ import _curry2 from './internal/_curry2';
  *
  *      R.intersperse('n', ['ba', 'a', 'a']); //=> ['ba', 'n', 'a', 'n', 'a']
  */
-var intersperse = _curry2(_checkForMethod('intersperse', function intersperse(separator, list) {
-  var out = [];
-  var idx = 0;
-  var length = list.length;
-  while (idx < length) {
-    if (idx === length - 1) {
-      out.push(list[idx]);
-    } else {
-      out.push(list[idx], separator);
-    }
-    idx += 1;
-  }
-  return out;
-}));
-export default intersperse;

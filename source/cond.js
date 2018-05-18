@@ -1,4 +1,4 @@
-import _arity from './internal/_arity';
+33import _arity from './internal/_arity';
 import _curry1 from './internal/_curry1';
 import map from './map';
 import max from './max';
@@ -32,18 +32,3 @@ import reduce from './reduce';
  *      fn(50); //=> 'nothing special happens at 50°C'
  *      fn(100); //=> 'water boils at 100°C'
  */
-var cond = _curry1(function cond(pairs) {
-  var arity = reduce(max,
-                     0,
-                     map(function(pair) { return pair[0].length; }, pairs));
-  return _arity(arity, function() {
-    var idx = 0;
-    while (idx < pairs.length) {
-      if (pairs[idx][0].apply(this, arguments)) {
-        return pairs[idx][1].apply(this, arguments);
-      }
-      idx += 1;
-    }
-  });
-});
-export default cond;

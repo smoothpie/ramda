@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+207import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _xtakeWhile from './internal/_xtakeWhile';
 import slice from './slice';
@@ -33,12 +33,3 @@ import slice from './slice';
  *
  *      R.takeWhile(x => x !== 'd' , 'Ramda'); //=> 'Ram'
  */
-var takeWhile = _curry2(_dispatchable(['takeWhile'], _xtakeWhile, function takeWhile(fn, xs) {
-  var idx = 0;
-  var len = xs.length;
-  while (idx < len && fn(xs[idx])) {
-    idx += 1;
-  }
-  return slice(0, idx, xs);
-}));
-export default takeWhile;

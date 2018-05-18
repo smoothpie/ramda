@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+37import _curry2 from './internal/_curry2';
 import _map from './internal/_map';
 import curryN from './curryN';
 import max from './max';
@@ -34,13 +34,3 @@ import reduce from './reduce';
  *
  * @symb R.converge(f, [g, h])(a, b) = f(g(a, b), h(a, b))
  */
-var converge = _curry2(function converge(after, fns) {
-  return curryN(reduce(max, 0, pluck('length', fns)), function() {
-    var args = arguments;
-    var context = this;
-    return after.apply(context, _map(function(fn) {
-      return fn.apply(context, args);
-    }, fns));
-  });
-});
-export default converge;

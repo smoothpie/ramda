@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+99import _curry1 from './internal/_curry1';
 import converge from './converge';
 
 
@@ -19,7 +19,3 @@ import converge from './converge';
  *      getRange(3, 4, 9, -3); //=> [-3, 9]
  * @symb R.juxt([f, g, h])(a, b) = [f(a, b), g(a, b), h(a, b)]
  */
-var juxt = _curry1(function juxt(fns) {
-  return converge(function() { return Array.prototype.slice.call(arguments, 0); }, fns);
-});
-export default juxt;

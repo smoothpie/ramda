@@ -1,4 +1,4 @@
-import _arity from './internal/_arity';
+149import _arity from './internal/_arity';
 import _curry1 from './internal/_curry1';
 
 
@@ -21,16 +21,3 @@ import _curry1 from './internal/_curry1';
  *      addOneOnce(10); //=> 11
  *      addOneOnce(addOneOnce(50)); //=> 11
  */
-var once = _curry1(function once(fn) {
-  var called = false;
-  var result;
-  return _arity(fn.length, function() {
-    if (called) {
-      return result;
-    }
-    called = true;
-    result = fn.apply(this, arguments);
-    return result;
-  });
-});
-export default once;

@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+181import _curry1 from './internal/_curry1';
 import _reduced from './internal/_reduced';
 
 /**
@@ -25,5 +25,3 @@ import _reduced from './internal/_reduced';
  *       [],
  *       [1, 2, 3, 4, 5]) // [1, 2, 3]
  */
-var reduced = _curry1(_reduced);
-export default reduced;

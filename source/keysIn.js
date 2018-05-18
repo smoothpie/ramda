@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+101import _curry1 from './internal/_curry1';
 
 
 /**
@@ -22,12 +22,3 @@ import _curry1 from './internal/_curry1';
  *      const f = new F();
  *      R.keysIn(f); //=> ['x', 'y']
  */
-var keysIn = _curry1(function keysIn(obj) {
-  var prop;
-  var ks = [];
-  for (prop in obj) {
-    ks[ks.length] = prop;
-  }
-  return ks;
-});
-export default keysIn;

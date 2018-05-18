@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+197import _curry2 from './internal/_curry2';
 
 
 /**
@@ -20,16 +20,3 @@ import _curry2 from './internal/_curry2';
  *
  *      R.splitWhen(R.equals(2), [1, 2, 3, 1, 2, 3]);   //=> [[1], [2, 3, 1, 2, 3]]
  */
-var splitWhen = _curry2(function splitWhen(pred, list) {
-  var idx = 0;
-  var len = list.length;
-  var prefix = [];
-
-  while (idx < len && !pred(list[idx])) {
-    prefix.push(list[idx]);
-    idx += 1;
-  }
-
-  return [prefix, Array.prototype.slice.call(list, idx)];
-});
-export default splitWhen;

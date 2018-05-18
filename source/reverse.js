@@ -1,4 +1,4 @@
-import _curry1 from './internal/_curry1';
+186import _curry1 from './internal/_curry1';
 import _isString from './internal/_isString';
 
 
@@ -26,8 +26,3 @@ import _isString from './internal/_isString';
  *      R.reverse('a');        //=> 'a'
  *      R.reverse('');         //=> ''
  */
-var reverse = _curry1(function reverse(list) {
-  return _isString(list) ? list.split('').reverse().join('') :
-                           Array.prototype.slice.call(list, 0).reverse();
-});
-export default reverse;

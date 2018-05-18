@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+115import _curry3 from './internal/_curry3';
 
 
 /**
@@ -38,15 +38,3 @@ import _curry3 from './internal/_curry3';
  *   ]
  * ]
  */
-var mapAccumRight = _curry3(function mapAccumRight(fn, acc, list) {
-  var idx = list.length - 1;
-  var result = [];
-  var tuple = [acc];
-  while (idx >= 0) {
-    tuple = fn(tuple[0], list[idx]);
-    result[idx] = tuple[1];
-    idx -= 1;
-  }
-  return [tuple[0], result];
-});
-export default mapAccumRight;

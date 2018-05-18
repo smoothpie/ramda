@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+239import _curry3 from './internal/_curry3';
 
 
 /**
@@ -29,7 +29,3 @@ import _curry3 from './internal/_curry3';
  *      truncate('12345');         //=> '12345'
  *      truncate('0123456789ABC'); //=> '0123456789…'
  */
-var when = _curry3(function when(pred, whenTrueFn, x) {
-  return pred(x) ? whenTrueFn(x) : x;
-});
-export default when;

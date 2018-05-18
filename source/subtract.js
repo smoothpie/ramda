@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+199import _curry2 from './internal/_curry2';
 
 
 /**
@@ -24,7 +24,3 @@ import _curry2 from './internal/_curry2';
  *      complementaryAngle(30); //=> 60
  *      complementaryAngle(72); //=> 18
  */
-var subtract = _curry2(function subtract(a, b) {
-  return Number(a) - Number(b);
-});
-export default subtract;

@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+22import _curry2 from './internal/_curry2';
 import _isFunction from './internal/_isFunction';
 import and from './and';
 import lift from './lift';
@@ -35,11 +35,3 @@ import lift from './lift';
  *      R.both(Maybe.Just(false), Maybe.Just(55)); // => Maybe.Just(false)
  *      R.both([false, false, 'a'], [11]); //=> [false, false, 11]
  */
-var both = _curry2(function both(f, g) {
-  return _isFunction(f) ?
-    function _both() {
-      return f.apply(this, arguments) && g.apply(this, arguments);
-    } :
-    lift(and)(f, g);
-});
-export default both;

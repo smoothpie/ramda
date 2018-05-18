@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+173import _curry3 from './internal/_curry3';
 import pathOr from './pathOr';
 
 
@@ -28,7 +28,3 @@ import pathOr from './pathOr';
  *      favorite(alice);  //=> undefined
  *      favoriteWithDefault(alice);  //=> 'Ramda'
  */
-var propOr = _curry3(function propOr(val, p, obj) {
-  return pathOr(val, [p], obj);
-});
-export default propOr;

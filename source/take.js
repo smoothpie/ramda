@@ -1,4 +1,4 @@
-import _curry2 from './internal/_curry2';
+204import _curry2 from './internal/_curry2';
 import _dispatchable from './internal/_dispatchable';
 import _xtake from './internal/_xtake';
 import slice from './slice';
@@ -47,7 +47,3 @@ import slice from './slice';
  * @symb R.take(1, [a, b]) = [a]
  * @symb R.take(2, [a, b]) = [a, b]
  */
-var take = _curry2(_dispatchable(['take'], _xtake, function take(n, xs) {
-  return slice(0, n < 0 ? Infinity : n, xs);
-}));
-export default take;

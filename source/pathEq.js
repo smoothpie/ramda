@@ -1,4 +1,4 @@
-import _curry3 from './internal/_curry3';
+157import _curry3 from './internal/_curry3';
 import equals from './equals';
 import path from './path';
 
@@ -27,7 +27,3 @@ import path from './path';
  *      const isFamous = R.pathEq(['address', 'zipCode'], 90210);
  *      R.filter(isFamous, users); //=> [ user1 ]
  */
-var pathEq = _curry3(function pathEq(_path, val, obj) {
-  return equals(path(_path, obj), val);
-});
-export default pathEq;
